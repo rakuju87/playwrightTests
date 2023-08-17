@@ -1,0 +1,1 @@
+export const AustratianCapitalCity = ['Sydney','Melbourne','Perth','Brisbane','Hobart','Adelaide','Canberra']
