@@ -8,6 +8,7 @@ jobs:
   playwright:
     name: 'Playwright Tests'
     runs-on: ubuntu-latest
+    environment: test
     container:
       image: mcr.microsoft.com/playwright:v1.37.0-jammy
     steps:
@@ -24,3 +25,4 @@ jobs:
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: 'test-reports\index.html'
+        if: always()
