@@ -22,8 +22,7 @@ test.describe.serial(`WeatherBitAPI - warmest Australian capital city`, async ()
         // }
     });
     test(`Verify the warmest city`, async () => {
-        let warmestCity: { city: string; temp: number; };
-        warmestCity = await apiActions.getWarmestCity(currentWeatherResponse);
+        const warmestCity = await apiActions.getWarmestAUCity(currentWeatherResponse);
         console.log(`Warmest australian capital city - ${warmestCity.city} with temp - ${warmestCity.temp}`);
     });
 });
