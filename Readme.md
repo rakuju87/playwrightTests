@@ -15,7 +15,7 @@ Local machine
 1. npm install (It will install all dependencies)
 2. npm run apiTest (It will run all tests under ./test folder)
 
-**Execution report **- test-reports/index.html
+**Execution report** - test-reports/index.html
 
 **CI/CD** - Every push or PR to main branch run github actions workflow
 
