@@ -2,7 +2,6 @@ node_modules/
 /test-results/
 /playwright-report/
 /playwright/.cache/
-secrets.env
 current.csv
 current.csv.gz
 test-reports

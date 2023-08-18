@@ -14,6 +14,7 @@ Local machine
 **Steps**
 1. npm install (It will install all dependencies)
 2. npm run apiTest (It will run all tests under ./test folder)
+3. Add your APIKEY in secrets.env
 
 **Execution report** - test-reports/index.html
 
