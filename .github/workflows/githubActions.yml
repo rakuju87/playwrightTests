@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run your tests
-        run: npx playwright apiTest
+        run: npm run apiTest
       - name: HTML Preview
         id: html_preview
         uses: pavi2410/html-preview-action@v2
