@@ -21,9 +21,9 @@ jobs:
         run: npm run apiTest
         env: 
           APIKEY: ${{secrets.APIKEY}}
-      - name: HTML Preview
-        id: html_preview
-        uses: pavi2410/html-preview-action@v2
-        with:
-          html_file: 'test-reports\index.html'
+      - uses: actions/upload-artifact@v3
         if: always()
+        with:
+          name: playwright-report
+          path: test-reports/
+          retention-days: 30
