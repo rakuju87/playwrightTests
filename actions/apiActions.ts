@@ -14,6 +14,7 @@ export class ApiActions {
     }
     async currentWeatherDataByLatLong(lat: number, long: number) {
         var params = { 'key': process.env.APIKEY == undefined ? "" : process.env.APIKEY, 'lat': lat, 'lon': long }
+        console.log(params);
         const response = await this.requestGet(`${url.currentWeather}`, params);
         expect(response.status()).toEqual(200);
         currentWeatherResponse = await response.json();
